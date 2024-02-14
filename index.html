@@ -1,0 +1,101 @@
+<style>
+    body {
+        background-color: #333;
+    }
+
+    h2 {
+        font-family: 'Impact';
+        font-size: 5em;
+        position: relative;
+        top: 325px;
+        color: transparent;
+        filter: drop-shadow(1px 2px 0px rgba(25, 25, 25, .75));
+    }
+
+    #wrap {
+        position: relative;
+        width: 800px;
+        margin: auto;
+    }
+
+    .heart {
+        background-color: hotpink;
+        display: inline-block;
+        height: 100px;
+        margin: 0px 25px 10px;
+        position: absolute;
+        top: 125px;
+        left: 250px;
+        transform: rotate(-45deg);
+        width: 100px;
+        z-index: 5;
+        animation: pulse 1.25s ease infinite;
+        filter: drop-shadow(1px 2px 0px rgba(25, 25, 25, .75));
+    }
+
+    .letter {
+        background-size: cover;
+        display: inline-block;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        position: relative;
+    }
+
+    @keyframes pulse {
+        0% { transform: rotate(-45deg) scale(1.5); }
+        25% { transform: rotate(-45deg) scale(1.66); }
+        50% { transform: rotate(-45deg) scale(1.75); }
+        100% { transform: rotate(-45deg) scale(1.5); }
+    }
+
+    .heart:before,
+    .heart:after {
+        content: "";
+        background-color: hotpink;
+        border-radius: 50%;
+        height: 100px;
+        position: absolute;
+        width: 100px;
+    }
+
+    .heart:before {
+        top: -50px;
+        left: 0;
+    }
+
+    .heart:after {
+        top: 0;
+        left: 50px;
+        filter: drop-shadow(1px 2px -1px rgba(25, 25, 25, .75));
+    }
+</style>
+
+
+
+<div id="wrap">
+    <span class="heart"></span>
+    <h2>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM.jpeg');">H</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM (1).jpeg');">a</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM (2).jpeg');">p</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM.jpeg');">p</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.46.08 AM.jpeg');">y</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.42.00 AM.jpeg');"></span> <!-- Space -->
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM (2).jpeg');">V</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM.jpeg');">a</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.44.07 AM.jpeg');">l</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM (1).jpeg');">e</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.46.08 AM.jpeg');">n</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM (2).jpeg');">t</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.42.00 AM.jpeg');">i</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM (1).jpeg');">n</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM.jpeg');">e</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.44.07 AM.jpeg');">'</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.46.08 AM.jpeg');">s</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM (1).jpeg');"></span> <!-- Space -->
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.41.28 AM.jpeg');">D</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.46.08 AM.jpeg');">a</span>
+        <span class="letter" style="background-image: url('images/WhatsApp Image 2024-02-14 at 8.44.07 AM.jpeg');">y</span>
+    </h2>
+</div>

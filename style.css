@@ -1,0 +1,63 @@
+body {
+    background-color: #333;
+}
+
+h2 {
+    font-family: 'Impact';
+    font-size: 5em;
+    position: relative;
+    top: 325px;
+    background: url(test.jpeg) center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: red;
+    filter: drop-shadow(1px 2px 0px rgba(25, 25, 25, .75));
+}
+
+#wrap {
+    position: relative;
+    width: 800px;
+    margin: auto;
+}
+
+.heart {
+    background-color: hotpink;
+    display: inline-block;
+    height: 100px;
+    margin: 0px 25px 10px;
+    position: absolute;
+    top: 125px;
+    left: 250px;
+    transform: rotate(-45deg);
+    width: 100px;
+    z-index: 5;
+    animation: pulse 1.25s ease infinite;
+    filter: drop-shadow(1px 2px 0px rgba(25, 25, 25, .75));
+}
+
+@keyframes pulse {
+    0% { transform: rotate(-45deg) scale(1.5); }
+    25% { transform: rotate(-45deg) scale(1.66); }
+    50% { transform: rotate(-45deg) scale(1.75); }
+    100% { transform: rotate(-45deg) scale(1.5); }
+}
+
+.heart:before, .heart:after {
+    content: "";
+    background-color: hotpink;
+    border-radius: 50%;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+}
+
+.heart:before {
+    top: -50px;
+    left: 0;
+}
+
+.heart:after {
+    top: 0;
+    left: 50px;
+    filter: drop-shadow(1px 2px -1px rgba(25, 25, 25, .75));
+}
